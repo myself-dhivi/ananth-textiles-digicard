@@ -1,0 +1,188 @@
+/* Body Styling */
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    overflow: hidden; /* Prevent scrollbars */
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Bento Card Styling */
+.bento-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    width: 500px;
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 2; /* Ensure card is above the particles */
+}
+
+/* General Card Div Styling */
+.bento-card div {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Hover effects */
+.bento-card div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Section */
+.header {
+    grid-column: span 2;
+    text-align: center;
+}
+
+.header img {
+    width: 90px;
+    margin-bottom: 10px;
+}
+
+.header h1 {
+    margin: 10px 0;
+    font-size: 28px;
+    color: #FF3B3F;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.header p {
+    color: #555;
+    font-size: 14px;
+}
+
+/* Info and Services Sections */
+.bento-card .info, .bento-card .services {
+    grid-column: span 2;
+}
+
+p {
+    margin: 0;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.icon {
+    margin-right: 12px;
+    vertical-align: middle;
+}
+
+.info {
+    background: linear-gradient(135deg, #ff3b3f, #ff6567);
+    color: #fff;
+}
+.info p {
+    background: linear-gradient(135deg, #ff3b3f, #ff6567);
+    color: #fff;
+}
+
+/* City Selection Styling */
+
+.city-select {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Contact Info Box */
+.contact-info {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 15px;
+    color: #666;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.08);
+}
+
+.contact-info span {
+    font-weight: bold;
+}
+
+/* Save Contact Button */
+.save-contact-btn {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #ff3b3f;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.save-contact-btn:hover {
+    background-color: #e62e30;
+}
+
+/* Social Media Bento Card */
+.social-bento {
+    grid-column: span 2;
+    text-align: center;
+}
+
+.social-bento a {
+    margin: 0 10px;
+    color: #ff3b3f;
+    text-decoration: none;
+    font-size: 0px;
+    transition: color 0.3s ease;
+}
+
+.social-bento a:hover {
+    color: #e62e30;
+}
+
+.social-bento img {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+/* Responsive Mobile Styling */
+@media (max-width: 600px) {
+    .bento-card {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+}
+
+/* Particle JS Styling */
+.particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Font Family Addition */
+body {
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}

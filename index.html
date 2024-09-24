@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ananth Textiles Agency</title>
+    <!-- Linking external CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@700&family=Poppins:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="particles-js" class="particles-js"></div>
+
+    <div class="bento-card">
+        <!-- Header Section -->
+        <div class="header">
+            <img src="https://ananthtextiles.com/wp-content/uploads/2019/09/LOGOpng.png" alt="Ananth Textiles Logo">
+            <h1>Ananth Textiles Agency</h1>
+            <p>Over 40 years of excellence in the saree industry.</p>
+        </div>
+
+        <!-- Who We Are Section -->
+        <div class="info">
+            <p>
+                Premium sarees directly sourced from the finest Tamil Nadu manufacturers.
+            </p>
+        </div>
+
+        <!-- What We Do Section -->
+        <div class="services">
+            <p>
+                Offering a vast range of saree varieties tailored to meet your needs, from minimal to luxurious.
+            </p>
+        </div>
+
+        <!-- City Selection Section -->
+        <div>
+            <p>Select your city to contact a local representative:</p>
+            <select class="city-select" id="city-select" onchange="updateContact()">
+                <option value="">-- Select City --</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Coimbatore">Coimbatore</option>
+                <option value="Madurai">Madurai</option>
+                <option value="Tiruppur">Tiruppur</option>
+            </select>
+        </div>
+
+        <!-- Contact Information -->
+        <div>
+            <div class="contact-info" id="contact-info">
+                <p>Select a city to view the contact number.</p>
+            </div>
+            <button class="save-contact-btn" id="save-contact-btn" onclick="saveContact()" style="display:none;">Save Contact</button>
+        </div>
+
+        <!-- Social Media Bento -->
+        <div class="social-bento">
+            <p>Connect with us on:</p>
+            <a href="mailto:info@ananthtextiles.com" target="_blank"><img src="https://img.icons8.com/ios-filled/50/ff3b3f/email-open.png" alt="email-icon" /></a>
+            <a href="https://instagram.com/ananthtextiles" target="_blank"><img src="https://img.icons8.com/ios-filled/50/ff3b3f/instagram-new.png" alt="instagram-icon" /></a>
+            <a href="https://facebook.com/ananthtextiles" target="_blank"><img src="https://img.icons8.com/ios-filled/50/ff3b3f/facebook.png" alt="facebook-icon" /></a>
+            <a href="https://twitter.com/ananthtextiles" target="_blank"><img src="https://img.icons8.com/ios-filled/50/ff3b3f/x.png" alt="twitter-icon" /></a>
+            <a href="https://wa.me/919842234567" target="_blank"><img src="https://img.icons8.com/ios-filled/50/ff3b3f/whatsapp.png" alt="whatsapp-icon" /></a>
+            <a href="https://ananthtextiles.com" target="_blank"><img src="https://img.icons8.com/ios-filled/50/ff3b3f/internet.png" alt="website-icon" /></a>
+        </div>
+    </div>
+
+    <!-- External JS -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
